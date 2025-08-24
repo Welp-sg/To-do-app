@@ -1,0 +1,128 @@
+/* ToDoList.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.to-do-list {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  width: 380px;
+  text-align: center;
+}
+
+.to-do-list h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.to-do-list input[type="text"] {
+  width: 68%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.to-do-list input[type="text"]:focus {
+  border: 1px solid #6c63ff;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.3);
+}
+
+.add-button {
+  padding: 12px 16px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 12px;
+  background: #6c63ff;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.add-button:hover {
+  background: #5548d2;
+}
+
+/* Task List */
+ol {
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #eef1ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.task {
+  flex: 1;
+  font-size: 16px;
+  color: #444;
+  text-align: left;
+}
+
+/* Action Buttons */
+button {
+  margin-left: 6px;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/* Different button styles */
+.delete-button {
+  background: #ff6b6b;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #d94b4b;
+}
+
+.move-up-button {
+  background: #51cf66;
+  color: white;
+}
+
+.move-up-button:hover {
+  background: #3ea755;
+}
+
+.move-down-button {
+  background: #ffd43b;
+  color: #333;
+}
+
+.move-down-button:hover {
+  background: #e6b800;
+}
